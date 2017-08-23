@@ -1,0 +1,14 @@
+server:
+  port: 3389
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/dbapi-dev?userUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: root
+
+taiKangUrl: http://mobitest.95522.cn/fcb/ReceiveXmlServlet
+metLifeUrl: http://icare-uat.metlife.com.cn/services/YSW2ICareSave?wsdl

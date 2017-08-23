@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link th:href="@{bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
+    <link th:href="@{bootstrap/css/bootstrap-theme.min.css}" rel="stylesheet"/>
+    <meta charset="UTF-8"/>
+    <style type="text/css">
+        .left {
+            float: left;
+            width: 20%;;
+            height: 500px;
+            background-color: lightblue;
+        }
+
+        .center {
+            float: left;
+            width: 80%;
+            height: 500px;
+            background-color: antiquewhite;
+        }
+
+    </style>
+    <title>创百易</title>
+</head>
+
+<!--<frameset rows="20%,80%" border="0px" >-->
+    <!--<frame src="top.html" noresize ="noresize" scrolling="no"/>-->
+    <!--<frameset cols="30%,70%" border="0px">-->
+        <!--<frame src="left.html" noresize="noresize" scrolling="no"/>-->
+        <!--<frame src="right.html" noresize="norsize" scrolling="no"/>-->
+    <!--</frameset>-->
+
+<!--</frameset>-->
+
+
+<body>
+
+<div class="panel panel-primary">
+    <div style="width: 100%;height: 120px;background: burlywood;">
+        <h1 style="text-align: center ;font-size: 80px;margin-top:-10px ;color: darkcyan ">创百易后台管理系统</h1>
+    </div>
+    <div style="width: 100%;height: 500px;background:antiquewhite;">
+        <div class="left">
+            <ul>
+                <li>
+                    <button onclick="">结算</button>
+                </li>
+            </ul>
+        </div>
+        <div class="center">
+
+
+
+            <!--<table border="1px" cellpadding="10px" style="table-layout: fixed">-->
+                <!--<tr>-->
+                    <!--<th>id</th>-->
+                    <!--<th>乙方标识符</th>-->
+                    <!--<th>投保类型</th>-->
+                    <!--<th>姓名</th>-->
+                    <!--<th>电话</th>-->
+                    <!--<th>性别</th>-->
+                    <!--<th>生日</th>-->
+                    <!--<th>省份</th>-->
+                    <!--<th>市</th>-->
+                    <!--<th>地址</th>-->
+                    <!--<th>时间</th>-->
+                    <!--<th>操作</th>-->
+                <!--</tr>-->
+                <!--<tr th:each="entity:${list}">-->
+                <!--<td th:text="${entity.id}"></td>-->
+                <!--<td th:text="${entity.identifer}"></td>-->
+                <!--<td th:text="${entity.name}"></td>-->
+                <!--<td th:text="${entity.phone}"></td>-->
+                <!--<td th:text="${entity.sex}"></td>-->
+                <!--<td th:text="${entity.birthday}"></td>-->
+                <!--<td th:text="${entity.province}"></td>-->
+                <!--<td th:text="${entity.city}"></td>-->
+                <!--<td th:text="${entity.address}"></td>-->
+                <!--<td th:text="${entity.date}"></td>-->
+                <!--<td>-->
+                    <!--<button> 删除</button>-->
+                <!--</td>-->
+                <!--</tr>-->
+            <!--</table>-->
+        </div>
+    </div>
+
+
+    <!--<div class="panel-heading">-->
+    <!--<h3 class="panel-title">访问model</h3>-->
+    <!--</div>-->
+    <!--<div class="panel-body">-->
+    <!--<span>马侦铭</span>-->
+    <!--</div>-->
+    <!--<div th:if="${not #lists.isEmpty(list)}">-->
+    <!--<div class="panel panel-primary">-->
+    <!--<h3 class="panel-title">列表</h3>-->
+    <!--</div>-->
+    <!--<div class="panel-body">-->
+    <!--<ul class="panel-group">-->
+    <!--<li class="list-group-item" th:each="entity:${list}">-->
+    <!--<span th:text="${entity.name}"></span>-->
+    <!--<span th:text="${entity.sex}"></span>-->
+    <!--</li>-->
+    <!--</ul>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+</div>
+    <script th:src="@{jquery-1.10.2.min.js}" type="text/javascript"></script>
+    <script th:src="@{bootstrap/js/bootstrap.min.js}"></script>
+    <script th:inline="javascript">
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+server:
+  port: 9527
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/dbapi?userUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: root
+
+taiKangUrl: http://m.95522.cn/fcb/ReceiveXmlServlet
+metLifeUrl: http://icare.metlife.com.cn/services/YSW2ICareSave?wsdl
